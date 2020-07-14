@@ -21,12 +21,13 @@ const App = () => {
 
     // This function is passed into nested components using props, to allow them to update application state.
     const likePost = postId => {
-    return setPosts(posts.map(post => {
-      if (postId == post.id) {
+    return (
+      setPosts(posts.map(post => {
+      if (postId === post.id) {
         post.likes++
       }
       return post
-    }))
+    })))
   };
 
   return (
