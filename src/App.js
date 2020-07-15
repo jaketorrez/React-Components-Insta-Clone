@@ -33,6 +33,7 @@ const App = () => {
   return (
     <div className="App">
       {/* Add SearchBar and Posts here to render them */}
+      <SearchBar />
       <Posts 
       likePost = { likePost }
       posts={ posts } />
